@@ -11,8 +11,20 @@ struct Flight {
   int numPassengers;
   char passengers[MAX_PASSENGER][50];
 };
-void displayFlights(const struct Flight flight[],int numFlights)
-{}
+void displayFlights(const struct Flight flights[],int numFlights)
+{
+  printf("\n ---flight information ---\n");
+  for (int i = 0; i < numFlights; i++) {
+    printf("flight %s to %s (%d %d passengers)\n", flights[i].flightNumber, flights[i]
+           .destination,
+           flights[i].numPassengers,flights[i]
+           .capacity);
+    for (int j = 0; j<flights[i].numPassengers;j++) {
+      printf("passenger %d: %s\n",j+1,flights[i].passengers[j]);
+    }
+    printf("---------------------------------------------------------------\n");
+  }
+}
 void addPassenger(struct Flight *flight, const char *passengerName)
 {}
 int main()
