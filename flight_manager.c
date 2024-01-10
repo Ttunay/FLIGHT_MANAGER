@@ -3,11 +3,14 @@
 #include <string.h>
 
 #define MAX_FLIGHT 50
-#define MAX_PASSAGER 100
-
-void displayFlights(const struct FLight flight[],int numFlights)
+#define MAX_PASSENGER 100
+struct Flight {
+  char flightNumber[20];
+  char destination;
+};
+void displayFlights(const struct Flight flight[],int numFlights)
 {}
-void addPassenger(struct FLight *flight, const char *passengerName)
+void addPassenger(struct Flight *flight, const char *passengerName)
 {}
 int main()
 {
@@ -15,6 +18,7 @@ int main()
   int numFlights = 0;
   int choice;
   do {
+    printf("\n-------------------------WELCOME-------------------------------\n");
     printf("\nAirport Managermt System\n");
     printf("1. Display flight\n");
     printf("2 Add flight\n");
