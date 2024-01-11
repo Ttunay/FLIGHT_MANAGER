@@ -26,7 +26,19 @@ void displayFlights(const struct Flight flights[],int numFlights)
   }
 }
 void addPassenger(struct Flight *flight, const char *passengerName)
-{}
+  {
+  if(flight->numPassengers[flight->numPassengers],passengerName) 
+{
+  flight->numPassengers++;
+  printf("passenger %s added to the flight %s. \n",
+         passengerName,flight->flightNumber);
+}
+ else
+{
+  printf("flight %s is full cannot add more passengers\n", flight->flightNumber);
+}
+
+  }
 int main()
 {
   struct Flight flights[MAX_FLIGHT];
