@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
+
 
 #define MAX_FLIGHT 50
 #define MAX_PASSENGER 100
