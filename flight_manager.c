@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 #define MAX_FLIGHT 50
 #define MAX_PASSENGER 100
+
 struct Flight {
   char flightNumber[20];
   char destination;
@@ -12,6 +12,7 @@ struct Flight {
   int numPassengers;
   char passengers[MAX_PASSENGER][50];
 };
+
 void displayFlights(const struct Flight flights[],int numFlights)
 {
   printf("\n ---flight information ---\n");
@@ -26,6 +27,7 @@ void displayFlights(const struct Flight flights[],int numFlights)
     printf("---------------------------------------------------------------\n");
   }
 }
+
 void addPassenger(struct Flight *flight, const char *passengerName)
   {
   if(flight->numPassengers[flight->numPassengers],passengerName) 
@@ -40,6 +42,7 @@ void addPassenger(struct Flight *flight, const char *passengerName)
 }
 
   }
+
 int main()
 {
   struct Flight flights[MAX_FLIGHT];
